@@ -1,14 +1,14 @@
-import React from "react";
-const GalleryBody = ({ imageData }) => {
-  return (
-    <div>
-      {imageData.map((image) => (
-        <div key={image.id} className="column">
-          <img src={image.img} alt="" />
-        </div>
-      ))}
-    </div>
-  );
-};
-export default GalleryBody;
-
+export default function(props){
+  return(
+      <div>
+      {props.imageData.map(image=>{
+          return(
+            <div key={image.id} className="body">
+              <img src={image.img} alt=""></img>
+      </div>
+          )
+        })
+      }
+    </div>  
+  )
+}

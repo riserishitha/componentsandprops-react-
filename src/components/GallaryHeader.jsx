@@ -1,15 +1,13 @@
-import React from "react";
-
-const GallaryHeader = () => {
+export default function  ()  {
   return (
     <header>
       <img
-        className="logo"
+        className="symbol"
         src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png"
         alt=""
       ></img>
       <nav>
-        <ul className="nav_links">
+        <ul className="nav-bar">
           <li>
             <a href="#">Home</a>
           </li>
@@ -21,11 +19,10 @@ const GallaryHeader = () => {
           </li>
         </ul>
       </nav>
-      <a className="cta" href="#">
+      <a className="contact" href="#">
         <button>Contact</button>
       </a>
     </header>
   );
 };
 
-export default GallaryHeader;

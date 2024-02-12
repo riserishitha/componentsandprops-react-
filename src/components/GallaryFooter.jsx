@@ -1,6 +1,6 @@
 export default function(){
   return(
-    <footer className='footer-content'>
+    <footer>
       <h3>Author: Kalvium</h3>
     </footer>
   )
